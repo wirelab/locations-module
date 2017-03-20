@@ -3,5 +3,5 @@
 return [
     'title'       => 'Locations',
     'name'        => 'Locations Module',
-    'description' => ''
+    'description' => 'Locations module for PyroCMS 3'
 ];
