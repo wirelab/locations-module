@@ -1,0 +1,42 @@
+{
+    "name": "wirelab/locations-module",
+    "type": "streams-addon",
+    "description": "Locations module for PyroCMS 3.",
+    "keywords": [
+        "wirelab",
+        "language",
+        "pyrocms",
+        "pyrocms 3",
+        "language switcher"
+    ],
+    "homepage": "http://wirelab.nl/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wirelab",
+            "email": "info@wirelab.nl",
+            "homepage": "http://www.wirelab.nl/",
+            "role": "Owner"
+        }
+    ],
+    "support": {
+        "email": "info@wirelab.nl"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4",
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~4.4|~5.0",
+        "symfony/css-selector": "3.1.*",
+        "symfony/dom-crawler": "3.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wirelab\\LocationsModule\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/LocationsModuleTestCase.php"
+        ]
+    }
+}
