@@ -8,6 +8,9 @@ use Anomaly\Streams\Platform\Stream\Contract\StreamRepositoryInterface;
 
 class AssignmentsController extends AdminController
 {
+    /**
+     * Display an index of existing entries.
+     */
     public function index(AssignmentTableBuilder $table, StreamRepositoryInterface $streams, $stream)
     {
         $stream = $streams->find($stream);
@@ -15,6 +18,9 @@ class AssignmentsController extends AdminController
         return $table->render();
     }
 
+    /**
+     *  Displays a modal of fields
+     */
     public function choose(FieldRepositoryInterface $fields, StreamRepositoryInterface $streams, $stream)
     {
         $stream = $streams->find($stream);
@@ -26,6 +32,9 @@ class AssignmentsController extends AdminController
         return $this->view->make('module::admin/assignments/choose', compact('fields', 'type'));
     }
 
+    /**
+     * Creat a new assignment
+     */
     public function create(AssignmentFormBuilder $builder, FieldRepositoryInterface $fields, StreamRepositoryInterface $streams, $stream)
     {
         $stream = $streams->find($stream);

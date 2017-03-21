@@ -1,0 +1,11 @@
+<div class="thumbnail">
+  <div class="caption">
+    <h3 class="text-center">
+     {{ location.name }} <br>
+     <small>
+     {{ location.street }}, {{ location.city }}, {{ location.country }}
+     </small>
+    </h3>
+    <p><a href="mailto:{{ location.email }}" class="btn btn-primary" role="button">Contact</a> <a href="http://maps.google.com/?q={{ location.street }},{{ location.city }},{{ location.country }}" class="btn btn-default" role="button">Google maps</a></p>
+  </div>
+</div>

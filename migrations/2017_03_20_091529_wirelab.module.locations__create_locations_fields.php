@@ -13,7 +13,9 @@ class WirelabModuleLocationsCreateLocationsFields extends Migration
     protected $fields = [
         'name'     => 'anomaly.field_type.text',
         'email'    => 'anomaly.field_type.email',
-        'location' => 'anomaly.field_type.geocoder',
+        'country'  => 'anomaly.field_type.text',
+        'city'     => 'anomaly.field_type.text',
+        'street'   => 'anomaly.field_type.text',
     ];
 
 }

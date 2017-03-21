@@ -26,9 +26,7 @@ class LocationTableBuilder extends TableBuilder
      */
     protected $columns = [
         'name',
-        'city' => [
-            'value' => 'entry.location.city()'
-        ]
+        'city'
     ];
 
     /**

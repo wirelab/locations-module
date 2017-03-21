@@ -43,6 +43,7 @@ class LocationSeeder extends Seeder
 				'name' => 'Phone'
 			]
 		]);
+
         $this->assignments->create(
             [
                 'stream'       => $this->stream,
@@ -52,14 +53,13 @@ class LocationSeeder extends Seeder
         );
 
         $wirelab = $this->locations->create([
-        	'name'     => 'Wirelab',
-        	'email'    => 'info@wirelab.nl',
-        	'location_address' => 'Wirelab',
-        	'location_formatted' => 'Willem Wilminkplein 9, 7511 PG Enschede, Nederland',
-        	'location_latitude' => '52.2226335',
-        	'location_longitude' => '6.8933182',
-        	'location_formatted_latitude' => '52.2226335',
-        	'location_formatted_longitude' => '6.8933182',
+        	'en' => [
+                	'name'     => 'Wirelab',
+		        	'email'    => 'info@wirelab.nl',
+					'country'  => 'The Netherlands',
+					'city'     => 'Enschede',
+					'street'   => 'Willem Wilminkplein 9',
+        	]
         ]);
     }
 }

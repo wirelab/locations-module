@@ -31,10 +31,10 @@ class LocationsModule extends Module
         'fields' => [
             'buttons' => [
                 'new_field' => [
-                    'text' => 'module::button.field.new',
+                    'text'        => 'module::button.field.new',
                     'data-toggle' => 'modal',
                     'data-target' => '#modal',
-                    'href' => 'admin/locations/fields/choose',
+                    'href'        => 'admin/locations/fields/choose',
                 ],
             ],
             'sections' => [
@@ -44,7 +44,7 @@ class LocationsModule extends Module
                         'assign_fields' => [
                             'data-toggle' => 'modal',
                             'data-target' => '#modal',
-                            'href' => 'admin/locations/fields/assignments/{request.route.parameters.stream}/choose',
+                            'href'        => 'admin/locations/fields/assignments/{request.route.parameters.stream}/choose',
                         ],
                     ]
                 ]

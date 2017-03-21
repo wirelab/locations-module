@@ -4,10 +4,10 @@
     "description": "Locations module for PyroCMS 3.",
     "keywords": [
         "wirelab",
-        "language",
+        "Locations",
         "pyrocms",
         "pyrocms 3",
-        "language switcher"
+        "Locations module"
     ],
     "homepage": "http://wirelab.nl/",
     "license": "MIT",

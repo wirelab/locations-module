@@ -22,4 +22,10 @@ return [
 	'image' => [
 		'name' => 'Image'
 	],
+	'country' => [
+		'name' => 'Country'
+	],
+	'street' => [
+		'name' => 'Street'
+	],
 ];

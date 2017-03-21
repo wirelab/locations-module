@@ -7,15 +7,26 @@ use Anomaly\Streams\Platform\Stream\Contract\StreamRepositoryInterface;
 use Wirelab\LocationsModule\Location\LocationModel;
 class FieldsController extends AdminController
 {
+    /**
+     * Display an index of existing entries.
+     */
     public function index(FieldTableBuilder $table, LocationModel $locations)
     {
         $table->setStream($locations->getStream());
         return $table->render();
     }
+
+    /**
+     * Display a modal with field types
+     */
     public function choose(FieldTypeCollection $fieldTypes)
     {
         return view('module::ajax/choose_field_type', ['field_types' => $fieldTypes]);
     }
+
+     /**
+     * Display a form for creating a new field
+     */
     public function create(FieldFormBuilder $form, StreamRepositoryInterface $streams, FieldTypeCollection $fieldTypes)
     {
         $form
@@ -23,6 +34,10 @@ class FieldsController extends AdminController
             ->setFieldType($fieldTypes->get($_GET['field_type']));
         return $form->render();
     }
+
+     /**
+     * Display a form for editing a field
+     */
     public function edit(FieldFormBuilder $form, $id)
     {
         return $form->render($id);

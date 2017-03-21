@@ -6,11 +6,6 @@ use Wirelab\LocationsModule\Location\LocationRepository;
 
 class LocationsModuleServiceProvider extends AddonServiceProvider
 {
-
-    protected $plugins = [];
-
-    protected $commands = [];
-
     protected $routes = [
         'admin/locations'                                    => 'Wirelab\LocationsModule\Http\Controller\Admin\LocationsController@index',
         'admin/locations/create'                             => 'Wirelab\LocationsModule\Http\Controller\Admin\LocationsController@create',
@@ -25,31 +20,11 @@ class LocationsModuleServiceProvider extends AddonServiceProvider
         'admin/locations/fields/assignments/{stream}/create' => 'Wirelab\LocationsModule\Http\Controller\Admin\AssignmentsController@create',
     ];
 
-
-    protected $middleware = [];
-
-    protected $listeners = [];
-
-    protected $aliases = [];
-
-    protected $bindings = [];
-
-    protected $providers = [];
+    protected $bindings = [
+        'Anomaly\Streams\Platform\Model\Locations\LocationsLocationsEntryModel' => 'Wirelab\LocationsModule\Location\LocationModel',
+    ];
 
     protected $singletons = [
         LocationRepositoryInterface::class => LocationRepository::class,
     ];
-
-    protected $overrides = [];
-
-    protected $mobile = [];
-
-    public function register()
-    {
-    }
-
-    public function map()
-    {
-    }
-
 }
