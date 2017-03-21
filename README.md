@@ -3,6 +3,11 @@
 Locations module for PyroCMS 3
 
 ## Overwriting the default view
+### The prefered / project specific way
+1. `php artisan addon:publish locations`
+2. Edit the `show` view in `resources/<site name>/addons/wirelab/locations-module/views/location`
+
+### In a custom theme
 In your theme's service provider add the following:
 ```php
 protected $overrides = [
