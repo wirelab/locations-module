@@ -2,6 +2,7 @@
 
 use Anomaly\Streams\Platform\Addon\Module\Module;
 
+
 class LocationsModule extends Module
 {
 
@@ -39,6 +40,7 @@ class LocationsModule extends Module
             ],
             'sections' => [
                 'assignments' => [
+               'hidden' => true,
                     'href'    => 'admin/locations/fields/assignments/{request.route.parameters.stream}',
                     'buttons' => [
                         'assign_fields' => [
@@ -51,4 +53,6 @@ class LocationsModule extends Module
             ],
         ],
     ];
+
+
 }
