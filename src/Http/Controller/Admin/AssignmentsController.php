@@ -44,4 +44,23 @@ class AssignmentsController extends AdminController
         $builder->setStream($stream);
         return $builder->render();
     }
+
+    /**
+     * Edit an existing assignment.
+     *
+     * @param  AssignmentFormBuilder     $builder
+     * @param  StreamRepositoryInterface $streams
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function edit(AssignmentFormBuilder $builder, StreamRepositoryInterface $streams)
+    {
+        /* @var StreamInterface $stream */
+        if (!$stream = $streams->find($this->route->parameter('stream'))) {
+            $stream = $streams->findBySlugAndNamespace($this->route->parameter('stream'), $this->getNamespace());
+        }
+
+        return $builder
+            ->setStream($stream)
+            ->render($this->route->parameter('id'));
+    }
 }

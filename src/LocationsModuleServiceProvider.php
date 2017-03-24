@@ -9,13 +9,14 @@ use Wirelab\LocationsModule\Http\Controller\Admin\FieldsController;
 class LocationsModuleServiceProvider extends AddonServiceProvider
 {
     protected $routes = [
-        'admin/locations'                                    => 'Wirelab\LocationsModule\Http\Controller\Admin\LocationsController@index',
-        'admin/locations/create'                             => 'Wirelab\LocationsModule\Http\Controller\Admin\LocationsController@create',
-        'admin/locations/edit/{id}'                          => 'Wirelab\LocationsModule\Http\Controller\Admin\LocationsController@edit',
-        'admin/locations/assignments'                        => 'Wirelab\LocationsModule\Http\Controller\Admin\LocationsController@assignments',
-        'admin/locations/fields/assignments/{stream}'        => 'Wirelab\LocationsModule\Http\Controller\Admin\AssignmentsController@index',
-        'admin/locations/fields/assignments/{stream}/choose' => 'Wirelab\LocationsModule\Http\Controller\Admin\AssignmentsController@choose',
-        'admin/locations/fields/assignments/{stream}/create' => 'Wirelab\LocationsModule\Http\Controller\Admin\AssignmentsController@create',
+        'admin/locations'                                       => 'Wirelab\LocationsModule\Http\Controller\Admin\LocationsController@index',
+        'admin/locations/create'                                => 'Wirelab\LocationsModule\Http\Controller\Admin\LocationsController@create',
+        'admin/locations/edit/{id}'                             => 'Wirelab\LocationsModule\Http\Controller\Admin\LocationsController@edit',
+        'admin/locations/assignments'                           => 'Wirelab\LocationsModule\Http\Controller\Admin\LocationsController@assignments',
+        'admin/locations/fields/assignments/{stream}'           => 'Wirelab\LocationsModule\Http\Controller\Admin\AssignmentsController@index',
+        'admin/locations/fields/assignments/{stream}/choose'    => 'Wirelab\LocationsModule\Http\Controller\Admin\AssignmentsController@choose',
+        'admin/locations/fields/assignments/{stream}/create'    => 'Wirelab\LocationsModule\Http\Controller\Admin\AssignmentsController@create',
+        'admin/locations/fields/assignments/{stream}/edit/{id}' => 'Wirelab\LocationsModule\Http\Controller\Admin\AssignmentsController@edit',
     ];
 
     protected $bindings = [
