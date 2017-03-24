@@ -40,7 +40,7 @@ class LocationsModule extends Module
             ],
             'sections' => [
                 'assignments' => [
-               'hidden' => true,
+                    'hidden' => true,
                     'href'    => 'admin/locations/fields/assignments/{request.route.parameters.stream}',
                     'buttons' => [
                         'assign_fields' => [
