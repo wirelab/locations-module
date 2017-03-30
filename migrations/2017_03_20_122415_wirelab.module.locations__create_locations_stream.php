@@ -43,6 +43,10 @@ class WirelabModuleLocationsCreateLocationsStream extends Migration
             'translatable' => true,
             'required'     => true
         ],
+        'region' => [
+            'translatable' => true,
+            'required'     => true
+        ],
     ];
 
 }
