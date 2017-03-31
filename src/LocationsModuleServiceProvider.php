@@ -34,6 +34,6 @@ class LocationsModuleServiceProvider extends AddonServiceProvider
      */
     public function register(FieldRouter $fields)
     {
-        $fields->route($this->addon, FieldsController::class, 'locations');
+        $fields->route($this->addon, FieldsController::class, 'admin/locations');
     }
 }
