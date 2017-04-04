@@ -28,4 +28,7 @@ return [
 	'street' => [
 		'name' => 'Street'
 	],
+	'region' => [
+		'name' => 'Region'
+	]
 ];

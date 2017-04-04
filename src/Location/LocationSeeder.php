@@ -51,6 +51,23 @@ class LocationSeeder extends Seeder
                 'required'     => false
             ]
         );
+		$tags = $this->fields->create([
+			'namespace' => $this->namespace,
+			'slug' => 'tags',
+			'type' => 'anomaly.field_type.tags',
+			'locked' => 0,
+			'en' => [
+				'name' => 'Tags'
+			]
+		]);
+
+        $this->assignments->create(
+            [
+                'stream'       => $this->stream,
+                'field'        => $tags,
+                'required'     => false
+            ]
+        );
 
         $wirelab = $this->locations->create([
         	'en' => [
