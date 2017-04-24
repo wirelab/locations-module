@@ -30,5 +30,8 @@ return [
 	],
 	'region' => [
 		'name' => 'Region'
+	],
+	'postal_code' => [
+		'name' => 'Postal code'
 	]
 ];

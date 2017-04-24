@@ -70,12 +70,16 @@ class LocationSeeder extends Seeder
         );
 
         $wirelab = $this->locations->create([
+        	'name'        => 'Wirelab',
+        	'email'       => 'info@wirelab.nl',
+        	'postal_code' => '7511 PG',
+        	'phone'       => '053 203 0700',
+        	'tags'        => ['wirelab', 'The Netherlands', 'Enschede', 'Willem Wilminkplein 9', 'Overijssel','7511 PG','053 203 0700', 'info@wirelab.nl'],
         	'en' => [
-                	'name'     => 'Wirelab',
-		        	'email'    => 'info@wirelab.nl',
-					'country'  => 'The Netherlands',
-					'city'     => 'Enschede',
-					'street'   => 'Willem Wilminkplein 9',
+				'country'  => 'The Netherlands',
+				'city'     => 'Enschede',
+				'street'   => 'Willem Wilminkplein 9',
+				'region'   => 'Overijssel',
         	]
         ]);
     }

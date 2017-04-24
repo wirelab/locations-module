@@ -11,12 +11,13 @@ class WirelabModuleLocationsCreateLocationsFields extends Migration
      * @var array
      */
     protected $fields = [
-        'name'     => 'anomaly.field_type.text',
-        'email'    => 'anomaly.field_type.email',
-        'country'  => 'anomaly.field_type.text',
-        'city'     => 'anomaly.field_type.text',
-        'street'   => 'anomaly.field_type.text',
-        'region'   => 'anomaly.field_type.text',
+        'name'        => 'anomaly.field_type.text',
+        'email'       => 'anomaly.field_type.email',
+        'country'     => 'anomaly.field_type.text',
+        'city'        => 'anomaly.field_type.text',
+        'street'      => 'anomaly.field_type.text',
+        'region'      => 'anomaly.field_type.text',
+        'postal_code' => 'anomaly.field_type.text'
     ];
 
 }

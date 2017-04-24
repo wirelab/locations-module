@@ -24,11 +24,11 @@ class WirelabModuleLocationsCreateLocationsStream extends Migration
      */
     protected $assignments = [
         'name' => [
-            'translatable' => true,
+            'translatable' => false,
             'required'     => true
         ],
         'email' => [
-            'translatable' => true,
+            'translatable' => false,
             'required'     => true
         ],
         'country' => [
@@ -43,9 +43,13 @@ class WirelabModuleLocationsCreateLocationsStream extends Migration
             'translatable' => true,
             'required'     => true
         ],
+        'postal_code' => [
+            'translatable' => false,
+            'required'     => true
+        ],
         'region' => [
             'translatable' => true,
-            'required'     => true
+            'required'     => false
         ],
     ];
 
