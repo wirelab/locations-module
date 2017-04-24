@@ -74,7 +74,7 @@ class LocationSeeder extends Seeder
         	'email'       => 'info@wirelab.nl',
         	'postal_code' => '7511 PG',
         	'phone'       => '053 203 0700',
-        	'tags'        => ['wirelab', 'The Netherlands', 'Enschede', 'Willem Wilminkplein 9', 'Overijssel','7511 PG','053 203 0700', 'info@wirelab.nl'],
+        	'tags'        =>  serialize(['wirelab', 'The Netherlands', 'Enschede', 'Willem Wilminkplein 9', 'Overijssel','7511 PG','053 203 0700', 'info@wirelab.nl']),
         	'en' => [
 				'country'  => 'The Netherlands',
 				'city'     => 'Enschede',
