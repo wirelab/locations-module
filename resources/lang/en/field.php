@@ -25,8 +25,12 @@ return [
 	'country' => [
 		'name' => 'Country'
 	],
-	'street' => [
-		'name' => 'Street'
+	'address' => [
+		'name' => 'Address'
+	],
+	'address_additonal' => [
+		'name' => 'Address additional',
+		'instructions' => 'Additional information regarding the address (i.e Building information).'
 	],
 	'region' => [
 		'name' => 'Region'

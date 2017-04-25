@@ -15,7 +15,8 @@ class WirelabModuleLocationsCreateLocationsFields extends Migration
         'email'       => 'anomaly.field_type.email',
         'country'     => 'anomaly.field_type.text',
         'city'        => 'anomaly.field_type.text',
-        'street'      => 'anomaly.field_type.text',
+        'address'     => 'anomaly.field_type.text',
+        'address_additonal' => 'anomaly.field_type.text',
         'region'      => 'anomaly.field_type.text',
         'postal_code' => 'anomaly.field_type.text'
     ];

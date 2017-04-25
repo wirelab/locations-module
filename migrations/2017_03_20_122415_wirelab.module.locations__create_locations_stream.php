@@ -39,9 +39,13 @@ class WirelabModuleLocationsCreateLocationsStream extends Migration
             'translatable' => true,
             'required'     => true
         ],
-        'street' => [
+        'address' => [
             'translatable' => true,
             'required'     => true
+        ],
+        'address_additonal' => [
+            'translatable' => true,
+            'required'     => false
         ],
         'postal_code' => [
             'translatable' => false,

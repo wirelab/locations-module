@@ -78,7 +78,7 @@ class LocationSeeder extends Seeder
         	'en' => [
 				'country'  => 'The Netherlands',
 				'city'     => 'Enschede',
-				'street'   => 'Willem Wilminkplein 9',
+				'address'   => 'Willem Wilminkplein 9',
 				'region'   => 'Overijssel',
         	]
         ]);
