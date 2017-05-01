@@ -25,7 +25,8 @@ class LocationsModule extends Module
                     'text' => 'module::button.location.new',
                 ],
                 'assignments' =>[
-                    'enabled' => 'admin/locations'
+                    'enabled' => 'admin/locations',
+                    'permission' => 'wirelab.module.locations::fields.*',
                 ],
             ]
         ],
