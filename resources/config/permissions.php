@@ -9,4 +9,9 @@ return [
     'fields' => [
         'manage',
     ],
+    'addresses' => [
+        'read',
+        'write',
+        'delete',
+    ],
 ];

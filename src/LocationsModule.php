@@ -30,6 +30,15 @@ class LocationsModule extends Module
                 ],
             ]
         ],
+        'addresses' => [
+            'buttons' => [
+                'new_address',
+                'assignments' =>[
+                    'enabled' => 'admin/locations/addresses',
+                    'permission' => 'wirelab.module.locations::fields.*',
+                ],
+            ],
+        ],
         'fields' => [
             'buttons' => [
                 'new_field' => [

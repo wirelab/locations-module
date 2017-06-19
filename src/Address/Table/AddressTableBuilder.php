@@ -1,8 +1,8 @@
-<?php namespace Wirelab\LocationsModule\Location\Table;
+<?php namespace Wirelab\LocationsModule\Address\Table;
 
 use Anomaly\Streams\Platform\Ui\Table\TableBuilder;
 
-class LocationTableBuilder extends TableBuilder
+class AddressTableBuilder extends TableBuilder
 {
 
     /**
@@ -26,6 +26,8 @@ class LocationTableBuilder extends TableBuilder
      */
     protected $columns = [
         'name',
+        'address',
+        'city',
     ];
 
     /**

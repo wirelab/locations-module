@@ -8,5 +8,6 @@ return [
     	'locations'   => 'Locations',
     	'fields'      => 'Fields',
     	'assignments' => 'Assignments',
+        'addresses' => 'Addresses',
     ],
 ];

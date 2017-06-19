@@ -7,4 +7,5 @@ return [
 	'field' => [
 		'new' => 'New field'
 	],
+    'new_address' => 'New Address',
 ];

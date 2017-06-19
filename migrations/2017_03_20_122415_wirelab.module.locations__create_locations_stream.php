@@ -31,30 +31,9 @@ class WirelabModuleLocationsCreateLocationsStream extends Migration
             'translatable' => false,
             'required'     => true
         ],
-        'country' => [
-            'translatable' => true,
-            'required'     => true
-        ],
-        'city' => [
-            'translatable' => true,
-            'required'     => true
-        ],
-        'address' => [
-            'translatable' => true,
-            'required'     => true
-        ],
-        'address_additonal' => [
-            'translatable' => true,
-            'required'     => false
-        ],
-        'postal_code' => [
-            'translatable' => false,
-            'required'     => true
-        ],
-        'region' => [
-            'translatable' => true,
-            'required'     => false
-        ],
+        'phone',
+        'tags',
+        'addresses',
     ];
 
 }
