@@ -12,7 +12,7 @@ class WirelabModuleLocationsCreateAddressesStream extends Migration
      */
     protected $stream = [
         'slug' => 'addresses',
-        'title_column' => 'name',
+        'title_column' => 'title',
         'translatable' => true,
     ];
 
@@ -22,6 +22,9 @@ class WirelabModuleLocationsCreateAddressesStream extends Migration
      * @var array
      */
     protected $assignments = [
+        'title' => [
+            'required' => true,
+        ],
         'name' => [
             'required' => true,
         ],

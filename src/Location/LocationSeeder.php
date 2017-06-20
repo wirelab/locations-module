@@ -39,7 +39,8 @@ class LocationSeeder extends Seeder
     public function run()
     {
         $address1 = $this->addresses->create([
-            'name' => 'Bezoekadres',
+            'title' => 'Bezoekadres',
+            'name' => 'Wirelab',
         	'postal_code' => '7511 PG',
             'country' => 'The Netherlands',
             'city' => 'Enschede',
@@ -51,7 +52,7 @@ class LocationSeeder extends Seeder
             'name' => 'Wirelab',
             'email' => 'info@wirelab.nl',
             'phone' => '053 203 0700',
-        	'tags'        =>  ['wirelab', 'The Netherlands', 'Enschede', 'Willem Wilminkplein 9', 'Overijssel','7511 PG','053 203 0700', 'info@wirelab.nl'],
+        	'tags' =>  ['wirelab', 'The Netherlands', 'Enschede', 'Willem Wilminkplein 9', 'Overijssel','7511 PG','053 203 0700', 'info@wirelab.nl'],
         ]);
         $wirelab->addresses()->attach($address1);
     }

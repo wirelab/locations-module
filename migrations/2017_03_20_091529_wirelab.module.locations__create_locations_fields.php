@@ -12,6 +12,7 @@ class WirelabModuleLocationsCreateLocationsFields extends Migration
      */
     protected $fields = [
         'name'        => 'anomaly.field_type.text',
+        'title'       => 'anomaly.field_type.text',
         'country'     => 'anomaly.field_type.text',
         'city'        => 'anomaly.field_type.text',
         'address'     => 'anomaly.field_type.text',
