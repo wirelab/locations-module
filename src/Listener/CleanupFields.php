@@ -8,6 +8,8 @@ class CleanupFields
 {
     public function handle(ModuleWasUninstalled $event)
     {
+        if($event->getModule()->getSlug() != 'locations')
+            return;
         $fields = app(FieldRepositoryInterface::class);
         $oldFields = $fields->findAllByNamespace('locations');
         foreach($oldFields as $field) {
