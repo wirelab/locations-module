@@ -1,4 +1,5 @@
 # Locations module
+## ⚠️ This repository has been deprecated ⚠️
 
 Locations module for PyroCMS 3 with dynamic field.
 
